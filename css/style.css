@@ -59,7 +59,13 @@ a{
     color: white;
     font-family: 'Inter';
     border: 1px solid black;
+    cursor: pointer;
 }
 label{
     margin-right: 5px;
+}
+span{
+    font-size: 22px;
+    color:rgb(26, 26, 156);
+    
 }
