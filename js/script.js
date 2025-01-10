@@ -2,20 +2,20 @@ const btnSubmit = document.querySelector('#btn-submit')
 btnSubmit.addEventListener('click', (e)=>{
     e.preventDefault()
     let name = document.querySelector('#name-complete').value.trim()
-    localStorage.setItem('#name-complete', name)
-    localStorage.getItem('#name-complete')
+    localStorage.setItem('name-complete', name)
+    localStorage.getItem('name-complete')
 
     let email = document.querySelector('#email').value.trim()
-    localStorage.setItem('#email', email)
-    localStorage.getItem('#email')
+    localStorage.setItem('email', email)
+    localStorage.getItem('email')
     
-    let phone = Number(document.querySelector('#phone').value)
-    localStorage.setItem('#phone', phone)
-    localStorage.getItem('#phone')
+    let phone = document.querySelector('#phone').value.trim()
+    localStorage.setItem('phone', phone)
+    localStorage.getItem('phone')
     
     let message = document.querySelector('#message').value.trim()
     localStorage.setItem('message', message)
-    localStorage.getItem('#message')
+    localStorage.getItem('message')
 
 
     if (!name) {
@@ -44,7 +44,6 @@ btnSubmit.addEventListener('click', (e)=>{
     }
     
 
-    localStorage.clear()
     messageFinal(name)
 })
 
